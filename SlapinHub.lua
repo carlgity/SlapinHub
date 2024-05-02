@@ -47,13 +47,6 @@ Home:AddButton({
 
 -- Extra
 
-Extra:AddButton({
-	Name = "1+",
-	Callback = function()
-        game.Players.LocalPlayer.leaderstats.Slaps.Value += 1
-  	end    
-})
-
 
 
 

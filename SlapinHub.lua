@@ -18,7 +18,7 @@ local Extra = Main:MakeTab({
 })
 
 local Credits = Main:MakeTab({
-	Name = "Extra",
+	Name = "Credits",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -53,7 +53,7 @@ Home:AddButton({
 
 -- Credits
 
-Credits:AddParagraph("Credits","Thanks to OrionLib for the ui. Thanks to Turtle Spy for the script. Thanks to Dark Dex for the script.")
+Credits:AddParagraph("Credits","Thanks to OrionLib for the ui. Thanks to Turtle Spy and Dark Dex for the script.")
 
 -- End
 OrionLib:Init()

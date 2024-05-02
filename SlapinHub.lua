@@ -1,3 +1,5 @@
+-- game.Players.LocalPlayer.leaderstats.Slaps.Value
+
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
 -- Windows
@@ -23,6 +25,11 @@ local Credits = Main:MakeTab({
 	PremiumOnly = false
 })
 
+local Extra = Main:MakeTab({
+	Name = "Extra",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
 -- Elements
 
@@ -46,7 +53,12 @@ Home:AddButton({
 
 -- Extra
 
-
+Extra:AddButton({
+	Name = "1+",
+	Callback = function()
+        game.Players.LocalPlayer.leaderstats.Slaps.Value += 1
+  	end    
+})
 
 
 

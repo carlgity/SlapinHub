@@ -1,4 +1,5 @@
--- game.Players.LocalPlayer.leaderstats.Slaps.Value
+-- game.Players.LocalPlayer
+-- game.Players.LocalPlayer.Character
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
@@ -9,6 +10,12 @@ local Main = OrionLib:MakeWindow({Name = "Slapin Hub", HidePremium = false, Save
 -- Tabs
 local Home = Main:MakeTab({
 	Name = "Home",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Player = Main:MakeTab({
+	Name = "Player",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -47,7 +54,24 @@ Home:AddButton({
 
 -- Extra
 
-
+Extra:AddToggle({
+                    Name = "Anti Portal",
+                    Default = false,
+                    Callback = function(Value)
+		AntiPortal = Value
+	if AntiPortal == true then
+		workspace.Lobby.Teleport2.CanTouch = false
+		workspace.Lobby.Teleport3.CanTouch = false
+		workspace.Lobby.Teleport4.CanTouch = false
+		workspace.Lobby.Teleport6.CanTouch = false
+	else
+		workspace.Lobby.Teleport2.CanTouch = true
+		workspace.Lobby.Teleport3.CanTouch = true
+		workspace.Lobby.Teleport4.CanTouch = true
+		workspace.Lobby.Teleport6.CanTouch = true
+	end
+end
+})
 
 
 -- Credits

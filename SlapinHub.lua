@@ -25,12 +25,6 @@ local Credits = Main:MakeTab({
 	PremiumOnly = false
 })
 
-local Extra = Main:MakeTab({
-	Name = "Extra",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
-
 -- Elements
 
 -- Home

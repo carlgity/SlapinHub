@@ -8,7 +8,7 @@ local Main = OrionLib:MakeWindow({Name = "Slapin Hub", HidePremium = false, Save
 
 -- Tabs
 local Home = Main:MakeTab({
-	Name = "Info",
+	Name = "Home",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })

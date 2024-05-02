@@ -11,8 +11,14 @@ local Home = Main:MakeTab({
 	PremiumOnly = false
 })
 
-local Test = Main:MakeTab({
-	Name = "Test",
+local Extra = Main:MakeTab({
+	Name = "Extra",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Credits = Main:MakeTab({
+	Name = "Extra",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -20,6 +26,7 @@ local Test = Main:MakeTab({
 
 -- Elements
 
+-- Home
 Home:AddLabel("Made by: santapeter69")
 
 Home:AddButton({
@@ -35,14 +42,18 @@ Home:AddButton({
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AnimatedKurai/Scripts/main/Dex%20Explorer.txt", true))()
   	end    
 })
+-- Home End
+
+-- Extra
 
 
 
 
 
 
+-- Credits
 
-
+Credits:AddParagraph("Credits","Thanks to OrionLib for the ui. Thanks to Turtle Spy for the script. Thanks to Dark Dex for the script.")
 
 -- End
 OrionLib:Init()
